@@ -10,8 +10,8 @@ services:
     environment:
       - username=${COLLABORA_USERNAME}
       - password=${COLLABORA_PASSWORD}
-      - dictionaries=en_US ru
-      - domain=- domain=collabora\\.exemple\\.com|mycloud\\.exemple\\.com
+      - dictionaries=en_US,ru
+      - domain=collabora\\.exemple\\.com|mycloud\\.exemple\\.com
       - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:logging.level=trace
     ports:
       - "9980:9980"
